@@ -11,8 +11,11 @@ import java.time.LocalDate;
 public class Main {
 
     public static void main(String[] args) throws ExecutionControl.NotImplementedException {
-        Cliente cliente = new ClienteContratado("James", LocalDate.now());
-        var premium = cliente.clientePremium();
+        ClientePremium cliente2 = new ClienteContratado("James", LocalDate.now());
+        var premium2 = cliente2.clientePremium();
+        System.out.println(premium2);
+
+        Cliente cliente = new ClienteAlvo("James", null);
     }
 }
 

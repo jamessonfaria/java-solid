@@ -1,15 +1,15 @@
-package br.com.jamesson.solid.l.solution;
+package br.com.jamesson.solid.l.problem;
 
 import java.time.LocalDate;
 
-public class ClienteContratado extends ClientePremium {
+public class ClienteContratado extends Cliente {
 
     public ClienteContratado(String nome, LocalDate dataCadastro) {
         super(nome, dataCadastro);
     }
 
     @Override
-    protected boolean clientePremium() {
+    protected boolean clientePremium() throws UnsupportedOperationException {
         return dataCadastro.getYear() < 2017;
     }
 }

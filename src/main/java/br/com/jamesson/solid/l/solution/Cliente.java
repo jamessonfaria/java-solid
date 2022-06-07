@@ -12,6 +12,4 @@ public abstract class Cliente {
         this.dataCadastro = dataCadastro;
     }
 
-    protected abstract boolean clientePremium() throws UnsupportedOperationException;
-
 }
