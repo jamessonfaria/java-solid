@@ -3,7 +3,7 @@ package br.com.jamesson.solid.o.solution;
 import java.time.LocalDate;
 
 /*
- * OCP - Princio do abeerto / fechado
+ * OCP - Princio do aberto / fechado
  *
  *  */
 
