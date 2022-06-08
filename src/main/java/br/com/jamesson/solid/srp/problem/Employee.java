@@ -1,4 +1,4 @@
-package br.com.jamesson.solid.s.problem;
+package br.com.jamesson.solid.srp.problem;
 
 /*
 * SRP - Princio da reponsabilidade unica

@@ -1,15 +1,9 @@
-package br.com.jamesson.solid.s.solution;
-
-/*
- * SRP - Princio da reponsabilidade unica
- *
- *  */
+package br.com.jamesson.solid.srp.problem;
 
 public class Main {
 
-    private static final EmployeeFacade employeeFacade = new EmployeeFacade();
-
     public static void main(String[] args) {
+
         var employee = new Employee();
         cfo(employee);
         coo(employee);
@@ -17,15 +11,15 @@ public class Main {
     }
 
     public static void cfo(Employee employee){
-        employeeFacade.calculatePay("cfo");
+        employee.calculatePay("cfo");
     }
 
     public static void coo(Employee employee){
-        employeeFacade.reportHours("coo");
+        employee.reportHours("coo");
     }
 
     public static void dba(Employee employee){
-        employeeFacade.save("dba");
+        employee.save("dba");
     }
 
 }

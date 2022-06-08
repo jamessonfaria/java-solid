@@ -1,4 +1,4 @@
-package br.com.jamesson.solid.s.solution;
+package br.com.jamesson.solid.srp.solution;
 
 public class HourReporter {
     public void reportHours(String origem){
