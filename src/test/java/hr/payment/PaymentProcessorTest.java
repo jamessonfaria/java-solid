@@ -1,6 +1,13 @@
 package hr.payment;
 
 
+import br.com.jamesson.solid.dip.globomanticshr.refactored.notifications.EmployeeNotifier;
+import br.com.jamesson.solid.dip.globomanticshr.refactored.payment.PaymentProcessor;
+import br.com.jamesson.solid.dip.globomanticshr.refactored.persistence.EmployeeRepository;
+import br.com.jamesson.solid.dip.globomanticshr.refactored.personnel.Employee;
+import br.com.jamesson.solid.dip.globomanticshr.refactored.personnel.FullTimeEmployee;
+import br.com.jamesson.solid.dip.globomanticshr.refactored.personnel.Intern;
+import br.com.jamesson.solid.dip.globomanticshr.refactored.personnel.PartTimeEmployee;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
