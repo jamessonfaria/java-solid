@@ -1,6 +1,6 @@
-package br.com.jamesson.solid.dip.globomanticshr.before.notifications;
+package br.com.jamesson.solid.dip.globomanticshr.refactored.notifications;
 
-import br.com.jamesson.solid.dip.globomanticshr.before.personnel.Employee;
+import br.com.jamesson.solid.dip.globomanticshr.refactored.personnel.Employee;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -14,8 +14,9 @@ Email sender; To make it work you need to supply correct mail
 server data; The current configuration properties will not be
 valid.
  */
-public class EmailSender {
-    public static void notify(Employee employee){
+public class EmailSender implements EmployeeNotifier {
+    @Override
+    public void notify(Employee employee){
         // Configure email server
         Properties prop = new Properties();
         prop.put("mail.smtp.auth", true);
@@ -27,8 +28,7 @@ public class EmailSender {
         Session session = Session.getInstance(prop, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(
-                        "5d205e8b9503f6",
+                return new PasswordAuthentication("5d205e8b9503f6",
                         "969159ed0125ea");
             }
         });
@@ -55,7 +55,7 @@ public class EmailSender {
             message.setContent(multipart);
 
             // send and wait (mail server has limit)
-         //   Transport.send(message);
+            //Transport.send(message);
             System.out.println("Notified " + employee.getEmail());
             Thread.sleep(1000);
         }

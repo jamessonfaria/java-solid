@@ -1,6 +1,6 @@
-package br.com.jamesson.solid.dip.globomanticshr.before.persistence;
+package br.com.jamesson.solid.dip.globomanticshr.refactored.persistence;
 
-import br.com.jamesson.solid.dip.globomanticshr.before.personnel.Employee;
+import br.com.jamesson.solid.dip.globomanticshr.refactored.personnel.Employee;
 
 import java.io.IOException;
 import java.util.List;
