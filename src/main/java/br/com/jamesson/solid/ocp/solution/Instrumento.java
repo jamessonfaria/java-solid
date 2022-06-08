@@ -1,4 +1,4 @@
-package br.com.jamesson.solid.o.solution;
+package br.com.jamesson.solid.ocp.solution;
 
 public interface Instrumento {
 

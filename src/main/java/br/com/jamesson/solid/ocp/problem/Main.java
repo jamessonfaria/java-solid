@@ -1,11 +1,6 @@
-package br.com.jamesson.solid.o.solution;
+package br.com.jamesson.solid.ocp.problem;
 
 import java.time.LocalDate;
-
-/*
- * OCP - Princio do aberto / fechado
- *
- *  */
 
 public class Main {
 
